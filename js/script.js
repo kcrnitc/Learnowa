@@ -221,9 +221,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Counter animation for hero stats
+// Counter animation for hero stats with mobile stability fix
 function animateCounters() {
     const counters = document.querySelectorAll('.stat h3');
+    
+    // First, set fixed widths to prevent jumping
+    counters.forEach(counter => {
+        counter.style.minWidth = '80px';
+        counter.style.display = 'inline-block';
+        counter.style.textAlign = 'center';
+        counter.style.fontFamily = '"Inter", monospace'; // Use monospace for numbers
+    });
     
     counters.forEach(counter => {
         const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));

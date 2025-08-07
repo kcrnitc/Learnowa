@@ -178,6 +178,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    min-height: 4.2rem; /* Prevent layout shift */
 }
 
 .highlight {
@@ -248,6 +249,12 @@ body {
     font-weight: 700;
     color: var(--primary-green);
     margin-bottom: 0.5rem;
+    /* Use monospace for numbers to prevent width changes during animation */
+    font-family: 'Inter', monospace;
+    /* Fixed width for counter stability */
+    min-width: 80px;
+    display: inline-block;
+    text-align: center;
 }
 
 .stat p {
