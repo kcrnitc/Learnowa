@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnowa - Quality Education for Students</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="Learnowa Logo" class="logo">
+                    <span class="brand-name">Learnowa</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Learn, Grow, and Excel with <span class="highlight">Learnowa</span></h1>
+                <p class="hero-subtitle">Quality education for students from Class 1 to 12. Interactive lessons, expert teachers, and personalized learning paths.</p>
+                <div class="hero-buttons">
+                    <a href="signup.html" class="btn btn-primary">Start Learning Free</a>
+                    <a href="#courses" class="btn btn-secondary">Explore Courses</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>50,000+</h3>
+                        <p>Students</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Expert Teachers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>95%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-student.png" alt="Students Learning" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Learnowa?</h2>
+                <p>Discover the features that make learning fun and effective</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Interactive Video Lessons</h3>
+                    <p>Engaging video content with animations and real-world examples to make learning enjoyable.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your learning journey with detailed analytics and performance insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Teachers</h3>
+                    <p>Learn from qualified and experienced teachers who understand student needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Learning</h3>
+                    <p>Access courses anytime, anywhere with our mobile-friendly platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gamified Learning</h3>
+                    <p>Earn points, badges, and certificates while learning. Make education fun!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>24/7 Doubt Support</h3>
+                    <p>Get instant help with your doubts from our expert teaching assistants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Courses</h2>
+                <p>Comprehensive curriculum for all grades</p>
+            </div>
+            <div class="grade-tabs">
+                <button class="tab-btn active" data-grade="primary">Primary (1-5)</button>
+                <button class="tab-btn" data-grade="middle">Middle (6-8)</button>
+                <button class="tab-btn" data-grade="secondary">Secondary (9-10)</button>
+                <button class="tab-btn" data-grade="senior">Senior (11-12)</button>
+            </div>
+            <div class="courses-grid" id="courses-container">
+                <div class="course-card">
+                    <div class="course-image">📖</div>
+                    <div class="course-content">
+                        <h3>Mathematics</h3>
+                        <p>Comprehensive math curriculum with interactive problem-solving</p>
+                        <div class="course-meta">
+                            <span class="course-price">₹299/month</span>
+                            <span class="course-duration">6 months</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">🔬</div>
+                    <div class="course-content">
+                        <h3>Science</h3>
+                        <p>Physics, Chemistry, Biology with virtual lab experiments</p>
+                        <div class="course-meta">
+                            <span class="course-price">₹349/month</span>
+                            <span class="course-duration">6 months</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">🌍</div>
+                    <div class="course-content">
+                        <h3>Social Studies</h3>
+                        <p>History, Geography, Civics with multimedia content</p>
+                        <div class="course-meta">
+                            <span class="course-price">₹249/month</span>
+                            <span class="course-duration">6 months</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Learnowa</h2>
+                    <p>At Learnowa, we believe every student deserves quality education. Our mission is to make learning accessible, engaging, and effective for students from Class 1 to 12.</p>
+                    <p>With cutting-edge technology, expert educators, and personalized learning paths, we're transforming how students learn and grow.</p>
+                    <div class="about-points">
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>NCERT & State Board Aligned</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Personalized Learning Experience</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regular Assessments & Tests</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Parent Progress Reports</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.png" alt="About Learnowa" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Students Say</h2>
+                <p>Success stories from our learning community</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Learnowa made math so easy! The interactive videos helped me understand concepts I struggled with in school."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/student1.png" alt="Student" class="author-img">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Class 10, Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The gamified learning approach kept me engaged. I improved my grades significantly after joining Learnowa."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/student2.png" alt="Student" class="author-img">
+                        <div class="author-info">
+                            <h4>Rahul Kumar</h4>
+                            <span>Class 8, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Amazing platform! The teachers are so helpful, and I can learn at my own pace. Highly recommend!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/student3.png" alt="Student" class="author-img">
+                        <div class="author-info">
+                            <h4>Aisha Patel</h4>
+                            <span>Class 12, Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <p>Join thousands of students who are already excelling with Learnowa</p>
+                <a href="signup.html" class="btn btn-primary">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Learnowa Logo" class="logo">
+                        <span class="brand-name">Learnowa</span>
+                    </div>
+                    <p>Empowering students with quality education and innovative learning solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">Primary (1-5)</a></li>
+                        <li><a href="courses.html">Middle (6-8)</a></li>
+                        <li><a href="courses.html">Secondary (9-10)</a></li>
+                        <li><a href="courses.html">Senior (11-12)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Learnowa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
